@@ -1,0 +1,50 @@
+#slide{
+    
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#hproducts{
+  margin: 2px;
+ gap: 30px;
+ display: flex;
+ flex-wrap: wrap;
+ margin-top: 80px;
+
+
+}
+
+
+
+
+
+
+/* Media Query for Mobile Screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    #slide {
+      width: 100%; /* Make it full width */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .carousel img {
+      height: 250px; /* Reduce height for better mobile fit */
+      object-fit: cover; /* Ensures the image covers the available space */
+    }
+  
+    .carousel-caption {
+      font-size: 12px; /* Reduce caption size */
+      bottom: 10px; /* Adjust position */
+    }
+  
+    .carousel-caption h3 {
+      font-size: 16px; /* Reduce heading size */
+    }
+  
+    .carousel-caption p {
+      font-size: 12px; /* Reduce paragraph size */
+    }
+  }
+
+  

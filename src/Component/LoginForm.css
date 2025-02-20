@@ -1,0 +1,91 @@
+/* LoginForm.css */
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+    
+  } */
+  .container-fluid{
+    /* height: 100vh;
+    width: 1600; */
+   height: 100vh;
+      width: 100%;
+    /* background-image: url('https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background-concept_23-2148433737.jpg?t=st=1739359123~exp=1739362723~hmac=28d96bae3217c6a5af9ac4fad05bf91e3364e04ba3ac3987b999645b19dd55d2&w=1380'); */
+   background-size: cover  ;
+   max-width: 10000px;
+   margin-top: 200px;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  .login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .input-container input:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: #ff3333;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
