@@ -53,9 +53,7 @@ function AdminOrder() {
           </Col>
         ))}
       </Row>
-      {/* <Link to="/" className="btn btn-secondary mt-3 ms-2">
-                Back
-              </Link> */}
+     
     </Container>
   );
 }

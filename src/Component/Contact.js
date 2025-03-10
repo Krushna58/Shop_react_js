@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
-import "./Contact.css"; // Import CSS file for styling
+import "./Contact.css"; 
 import axios from "axios";
 import emailjs from '@emailjs/browser'
+import Navbar1 from "./Navbar1";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -48,6 +49,8 @@ const Contact = () => {
   };
 
   return (
+    <div>
+       <Navbar1/>
     <Container className="contact-container">
       <h2 className="text-center my-4">Contact Us</h2>
       <Row className="justify-content-center">
@@ -108,6 +111,9 @@ const Contact = () => {
         </Col>
       </Row>
     </Container>
+
+    </div>
+   
   );
 };
 

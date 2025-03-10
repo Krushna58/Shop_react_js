@@ -35,7 +35,7 @@ function Navbar1() {
   return (
     <Navbar bg="dark" data-bs-theme="dark" expand="lg" fixed="top">
       <Container>
-        <Navbar.Brand href="/" className="fw-bold">The T-Shirt Studio</Navbar.Brand>
+        <Navbar.Brand className="fw-bold">The T-Shirt Studio</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
@@ -49,9 +49,7 @@ function Navbar1() {
             <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
             <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
             <Nav.Link as={Link} to="/adminlogin"> Admin Login</Nav.Link>
-            {/* <Nav.Link as={Link} to="/add"> add product</Nav.Link>
-            <Nav.Link as={Link} to="/delete">delete product</Nav.Link>
-            <Nav.Link as={Link} to="/adminnav">admin nav</Nav.Link> */}
+       
 
           </Nav>
           <Nav className="ms-3">

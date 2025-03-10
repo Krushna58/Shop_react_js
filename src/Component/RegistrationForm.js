@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import './RegistrationForm.css';       // Import CSS for styling
+import './RegistrationForm.css';       
 import { Link, Router, Routes, useNavigate } from "react-router-dom";
 import LoginForm from "./LoginForm";
 import { Route } from "react-router-dom";
@@ -47,7 +47,7 @@ const RegistrationForm = () => {
       if (res.data === "User Added") {
         setUser(u);
         setTimeout(() => {
-          nav('/');
+          nav('/login');
         }, 100);
       } else {
         alert("Email Already Exists!!!");
@@ -57,7 +57,7 @@ const RegistrationForm = () => {
       alert("error");
     });
 
-    setError(""); // Reset the error
+    setError("");
     setSuccess(true);
     console.log("Form submitted:", { username, email, password, address });
   };

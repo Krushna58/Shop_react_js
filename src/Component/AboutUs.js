@@ -1,9 +1,12 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import Navbar1 from "./Navbar1";
 
 const AboutUs = () => {
   return (
-    <Container className="mt-5">
+    <div>
+      <Navbar1/>
+       <Container className="mt-5">
       <Card className="shadow-lg p-4 border-0">
         <Card.Body>
           <h2 className="text-center mb-4">About Us</h2>
@@ -37,6 +40,9 @@ const AboutUs = () => {
         </Card.Body>
       </Card>
     </Container>
+
+    </div>
+   
   );
 };
 

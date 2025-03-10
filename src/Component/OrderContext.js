@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const OrderContext = createContext();
 
 function OrderContextProvider(props) {
-  let [order, setOrder] = useState([]);    // ✅ Use lowercase `order` for consistency
+  let [order, setOrder] = useState([]);    
 
   console.log(props);
   

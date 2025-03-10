@@ -131,37 +131,48 @@ function Home() {
       </div>
 
       {/* //search -------------------------------------- */}
-      <Container className="p-4 shadow-lg rounded bg-light">
-  <h2 className="text-primary mb-4 text-center fw-bold">Filter</h2>
-  
-  <Row className="mb-3 gy-3">
-    <Col md={3}>
-      <h2 className="text-primary mb-3 fs-5">Filter By Brand</h2>
-      <Form.Select onChange={(e) => changeBrand(e.target.value)} className="shadow-sm border-primary">
-        <option disabled>Choose Brand</option>
-        <option value={"all"}>All</option>
-        <option value={"polo"}>Polo</option>
-        <option value={"zara"}>Zara</option>
-        <option value={"the t-shirt studio"}>The t-shirt studio</option>
-      </Form.Select>
-    </Col>
+      <Container >
+  <Row>
+    {/* Sidebar */}
+    <Col md={3} className="position-fixed start-0 top-50 mt-0  ms-n3">
+      <Container 
+        className="p-3 shadow-lg rounded bg-light" 
+        style={{ width: "300px", height: "250px", marginLeft: "-20px" }} // Shift slightly left
+      >
+        <h2 className="text-primary mb-3 text-center fw-bold">Filter</h2>
 
-    <Col md={3}>
-      <h2 className="text-primary mb-3 fs-5">Filter By Price</h2>
-      <Form.Select onChange={(e) => changeSize(e.target.value)} className="shadow-sm border-primary">
-        <option value={"all"}>All</option>
-        <option value={"400"}>Less than 400</option>
-        <option value={"800"}>Less than 800</option>
-        <option value={"1000"}>Less than 1000</option>
-      </Form.Select>
+        {/* Filter by Brand */}
+        <Form.Group className="mb-3">
+          <Form.Label className="text-primary fw-semibold">Filter By Brand</Form.Label>
+          <Form.Select onChange={(e) => changeBrand(e.target.value)} className="shadow-sm border-primary">
+            <option value="all">All</option>
+            <option value="polo">Polo</option>
+            <option value="zara">Zara</option>
+            <option value="the t-shirt studio">The T-shirt Studio</option>
+          </Form.Select>
+        </Form.Group>
+
+        {/* Filter by Price */}
+        <Form.Group>
+          <Form.Label className="text-primary fw-semibold">Filter By Price</Form.Label>
+          <Form.Select onChange={(e) => changeSize(e.target.value)} className="shadow-sm border-primary">
+            <option value="all">All</option>
+            <option value="400">Less than 400</option>
+            <option value="800">Less than 800</option>
+            <option value="1000">Less than 1000</option>
+          </Form.Select>
+        </Form.Group>
+      </Container>
     </Col>
   </Row>
 </Container>
 
+      
+
 
       {/* //end-search -------------------------------------- */}
 
-      <div style={{marginRight:"100px" ,marginLeft:"150px"}}>
+      <div style={{marginRight:"100px" ,marginLeft:"300px"}}>
         <div id="hproducts">
           {items.map((item) => (
             <Card border="primary" style={{ width: "18rem" }}>
@@ -197,7 +208,7 @@ function Home() {
                 </label>
                 <select
                   id="quantity"
-                    // Get the individual quantity, default to 1
+                    
                   onChange={handleQuantityChange}
                   className="form-select w-auto"
                 >
